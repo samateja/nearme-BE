@@ -1,0 +1,40 @@
+{
+  "name": "@quanlabs/nearme-api",
+  "version": "8.0.0",
+  "description": "",
+  "main": "server.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node server.js",
+    "debug": "nodemon --inspect server.js"
+  },
+  "dependencies": {
+    "@fmendoza/parse-server-onesignal-push-adapter": "^1.3.0",
+    "@parse/fs-files-adapter": "^1.2.1",
+    "@parse/s3-files-adapter": "^1.6.2",
+    "@parse/simple-mailgun-adapter": "^2.0.0",
+    "aws-sdk": "^2.1066.0",
+    "axios": "^0.25.0",
+    "cookie-parser": "^1.4.6",
+    "cookie-session": "^2.0.0",
+    "dotenv": "^14.3.2",
+    "ejs": "^3.1.6",
+    "express": "^4.17.2",
+    "express-ejs-layouts": "^2.5.1",
+    "i18n": "^0.14.1",
+    "limax": "^3.0.0",
+    "mailgen": "^2.0.16",
+    "mailgun.js": "^4.1.6",
+    "method-override": "^3.0.0",
+    "moment": "^2.29.1",
+    "node-cron": "^3.0.0",
+    "parse": "^3.4.1",
+    "parse-dashboard": "^3.3.0",
+    "parse-server": "^5.0.0-beta.6",
+    "parse-server-mailgun-adapter-template": "^1.1.7",
+    "pm2": "^5.1.2",
+    "sharp": "^0.29.3",
+    "stripe": "^8.201.0",
+    "winston": "^3.5.1"
+  }
+}

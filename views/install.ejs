@@ -1,0 +1,47 @@
+<div class="row my-5">
+  <div class="col-md-6 offset-md-3">
+    <div class="card card-outline-secondary">
+      <div class="card-header">
+        <h6 class="mb-0">Create Super Admin Account</h6>
+      </div>
+      <div class="card-body">
+
+        <% if (locals.flash) { %>
+        <div class="alert alert-warning" role="alert">
+          <%= flash %>
+        </div>
+        <% } %>
+
+        <form action="/install" method="POST">
+
+          <div class="mb-3">
+            <label class="form-label" for="name">Name</label>
+            <input type="text" class="form-control" name="name" id="name"
+              value="<%= (locals.input) ? input.name : '' %>">
+          </div>
+          <div class="mb-3">
+            <label class="form-label" for="username">Username</label>
+            <input type="text" class="form-control" name="username" id="username"
+              value="<%= (locals.input) ? input.username : '' %>">
+          </div>
+          <div class="mb-3">
+            <label class="form-label" for="email">Email</label>
+            <input type="email" class="form-control" name="email" id="email"
+              value="<%= (locals.input) ? input.email : '' %>">
+          </div>
+          <div class="mb-3">
+            <label class="form-label" for="password">Password</label>
+            <input type="password" class="form-control" name="password" id="password">
+          </div>
+          <div class="mb-3">
+            <label class="form-label" for="password_confirmation">Confirm password</label>
+            <input type="password" class="form-control" name="passwordConfirmation" id="password_confirmation">
+          </div>
+          <div class="mb-3">
+            <button type="submit" class="btn btn-primary">Install</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
